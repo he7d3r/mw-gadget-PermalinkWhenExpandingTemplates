@@ -1,9 +1,14 @@
-/* Add a permanent link to [[Special:ExpandTemplates]] */
-/*global $, mw*/
-/*jslint maxlen:80*/
+/**
+ * Add a permanent link to [[Special:ExpandTemplates]]
+ * @author: [[User:Helder.wiki]]
+ * @tracking: [[Special:GlobalUsage/User:Helder.wiki/Tools/PermalinkWhenExpandingTemplates.js]] ([[File:User:Helder.wiki/Tools/PermalinkWhenExpandingTemplates.js]])
+ */
+/*jslint browser: true, white: true*/
+/*global jQuery, mediaWiki */
+( function ( $, mw /* , undefined */ ) {
+'use strict';
 
 var addPermaLink = function () {
-	'use strict';
 	var param = {
 		'input': $('#input').val()
 	};
@@ -25,3 +30,5 @@ var addPermaLink = function () {
 if (mw.config.get('wgCanonicalSpecialPageName') === 'ExpandTemplates') {
 	$(addPermaLink);
 }
+
+}( jQuery, mediaWiki ) );
