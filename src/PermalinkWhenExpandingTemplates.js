@@ -10,7 +10,8 @@
 
 var addPermaLink = function () {
 	var param = {
-		'input': $('#input').val()
+		'input': $('#input').val(),
+		'contexttitle': $.trim( $('#contexttitle').val() )
 	};
 	if ($('#removecomments').is(':checked')) {
 		param.removecomments = true;
