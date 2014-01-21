@@ -26,7 +26,7 @@ var addPermaLink = function () {
 		param.wpGenerateRawHtml = true;
 	}
 	$('legend').append(' (<a href="' +
-		mw.util.wikiGetlink('Special:ExpandTemplates') +
+		mw.util.getUrl('Special:ExpandTemplates') +
 		'?' + $.param(param) +
 		'">link permanente para o teste atual</a>)');
 };
