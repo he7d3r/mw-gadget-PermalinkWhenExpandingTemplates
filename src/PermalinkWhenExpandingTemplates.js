@@ -10,7 +10,7 @@
 
 var addPermaLink = function () {
 	var param = {
-		'input': $('#wpInput').val(),
+		'wpInput': $('#wpInput').val(),
 		'contexttitle': $.trim( $('#contexttitle').val() )
 	};
 	if ($('#removecomments').is(':checked')) {
