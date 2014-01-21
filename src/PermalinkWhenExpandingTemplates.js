@@ -11,7 +11,7 @@
 var addPermaLink = function () {
 	var param = {
 		'wpInput': $('#wpInput').val(),
-		'contexttitle': $.trim( $('#contexttitle').val() )
+		'wpContextTitle': $.trim( $('#contexttitle').val() )
 	};
 	if ($('#removecomments').is(':checked')) {
 		param.wpRemoveComments = true;
