@@ -14,13 +14,16 @@ var addPermaLink = function () {
 		'contexttitle': $.trim( $('#contexttitle').val() )
 	};
 	if ($('#removecomments').is(':checked')) {
-		param.removecomments = true;
+		param.wpRemoveComments = true;
 	}
 	if ($('#removenowiki').is(':checked')) {
-		param.removenowiki = true;
+		param.wpRemoveNowiki = true;
 	}
 	if ($('#generate_xml').is(':checked')) {
-		param.generate_xml = true;
+		param.wpGenerateXml = true;
+	}
+	if ($('#generate_rawhtml').is(':checked')) {
+		param.wpGenerateRawHtml = true;
 	}
 	$('legend').append(' (<a href="' +
 		mw.util.wikiGetlink('Special:ExpandTemplates') +
