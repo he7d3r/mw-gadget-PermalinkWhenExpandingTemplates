@@ -8,22 +8,22 @@
 
 	var addPermaLink = function () {
 		var param = {
-			'wpInput': $('#wpInput').val(),
-			'wpContextTitle': $.trim( $('#contexttitle').val() )
+			'wpInput': $('#input textarea').val(),
+			'wpContextTitle': $.trim( $('#contexttitle input').val() )
 		};
-		if ($('#removecomments').is(':checked')) {
+		if ($('#removecomments input').is(':checked')) {
 			param.wpRemoveComments = true;
 		}
-		if ($('#removenowiki').is(':checked')) {
+		if ($('#removenowiki input').is(':checked')) {
 			param.wpRemoveNowiki = true;
 		}
-		if ($('#generate_xml').is(':checked')) {
+		if ($('#generate_xml input').is(':checked')) {
 			param.wpGenerateXml = true;
 		}
-		if ($('#generate_rawhtml').is(':checked')) {
+		if ($('#generate_rawhtml input').is(':checked')) {
 			param.wpGenerateRawHtml = true;
 		}
-		$('legend').append(' (<a href="' +
+		$('#ooui-0').before(' (<a href="' +
 			mw.util.getUrl('Special:ExpandTemplates') +
 			'?' + $.param(param) +
 			'">link permanente para o teste atual</a>)');
