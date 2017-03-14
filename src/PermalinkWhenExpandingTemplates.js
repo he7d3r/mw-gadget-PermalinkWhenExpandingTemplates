@@ -24,7 +24,7 @@
 		if ( $( '#generate_rawhtml input' ).is( ':checked' ) ) {
 			param.wpGenerateRawHtml = true;
 		}
-		$( '#ooui-0' ).before( ' (<a href="' +
+		$( '#ooui-1' ).before( ' (<a href="' +
 			mw.util.getUrl( 'Special:ExpandTemplates' ) +
 			'?' + $.param( param ) +
 			'">link permanente para o teste atual</a>)' );
